@@ -1,0 +1,3 @@
+include ':component_a'
+include ':app'
+rootProject.name = "CCDemo"

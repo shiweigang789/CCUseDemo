@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login_user_state_observer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/observe_login_user" />
+
+        <TextView
+            android:id="@+id/login_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap">
+
+            <Button
+                android:id="@+id/componentAOpenActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sync_a_open_page" />
+
+            <Button
+                android:id="@+id/componentAAsyncOpenActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/async_a_open_page" />zl
+
+            <Button
+                android:id="@+id/componentAGetData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sync_a_get_data" />
+
+            <Button
+                android:id="@+id/componentAAsyncGetData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/async_a_get_data" />
+
+            <Button
+                android:id="@+id/componentB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sync_b_open_page" />
+
+            <Button
+                android:id="@+id/componentBAsync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/async_b_slow_request" />
+
+            <Button
+                android:id="@+id/componentBGetData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sync_b_get_data" />
+
+            <Button
+                android:id="@+id/componentBLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/async_b_login" />
+
+            <Button
+                android:id="@+id/test_sub_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_sub_process" />
+
+            <Button
+                android:id="@+id/componentKt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call_kotlin_component" />
+
+            <Button
+                android:id="@+id/test_lifecycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/life_cycle_relationship" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#cccccc"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/console"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+    </ScrollView>
+
+</LinearLayout>
